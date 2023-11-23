@@ -103,14 +103,34 @@
 
             /* Navbar Section Styles */
             nav {
-                text-align: center;
-                margin: 0 auto;
-                padding: 3rem 0;
-            }
-            nav p span {
-                padding: 0 1rem;
-                font-size: 1rem;
                 font-family: var(--mono);
+                font-size: 80%;
+                padding: 1rem;
+            }
+            nav h1 a {
+                font-family: var(--mono);
+            }
+            nav ul {
+                list-style-type: none;
+                padding: none;
+                margin: none;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+            }
+            nav li:first-child {
+                flex-basis: 100%;
+                text-align: center;
+            }
+            nav a {
+                color: var(--white);
+                text-decoration: none;
+                display: block;
+            }
+            nav a:hover {
+                color: var(--magenta);
             }
         </style>
     </head>
