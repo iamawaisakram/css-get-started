@@ -43,7 +43,9 @@ a:hover {
 
 /* Intro Section Styles */
 #intro {
-    padding-bottom: 10rem;
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 #intro p {
     font-size: 1rem;
@@ -64,8 +66,12 @@ a:hover {
 }
 
 /* Contact Section Styles */
-#contact {
+.section-plum {
     background-color: var(--plum);
+}
+
+#contact {
+    width: 400px;
     text-align: center;
     margin: 0 auto;
     padding: 3rem 0;
@@ -96,8 +102,8 @@ nav h1 a {
 }
 nav ul {
     list-style-type: none;
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -129,6 +135,9 @@ nav [class*="fa-"]:hover {
     background-color: var(--magenta);
     padding: 0.5rem;
     border-radius: 2px;
+    font-family: var(--mono);
+    text-decoration: none;
+    color: var(--white);
 }
 .button:hover {
     color: var(--white);
@@ -138,7 +147,7 @@ nav [class*="fa-"]:hover {
 /** Footer Style */
 footer {
     text-align: center;
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 
 footer ul {
