@@ -12,6 +12,10 @@
             href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap"
             rel="stylesheet"
         />
+        <script
+            src="https://kit.fontawesome.com/3a4937b805.js"
+            crossorigin="anonymous"
+        ></script>
         <style>
             /* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
             :root {
@@ -124,13 +128,31 @@
                 flex-basis: 100%;
                 text-align: center;
             }
+            nav [class*="fa-"] {
+                font-size: 150%;
+                color: var(--aqua);
+            }
+            nav h1 [class*="fa-"] {
+                font-size: 100%;
+                color: var(--aqua);
+            }
             nav a {
                 color: var(--white);
                 text-decoration: none;
                 display: block;
             }
-            nav a:hover {
+            nav a:hover,
+            nav [class*="fa-"]:hover {
                 color: var(--magenta);
+            }
+            .button {
+                background-color: var(--magenta);
+                padding: 0.5rem;
+                border-radius: 2px;
+            }
+            .button:hover {
+                color: var(--white);
+                background-color: var(--hotmag);
             }
         </style>
     </head>
@@ -139,7 +161,10 @@
             <ul>
                 <li>
                     <h1>
-                        <a href="index.html"> Awais Mughal </a>
+                        <a href="index.html">
+                            <span class="fa-solid fa-atom"></span>
+                            <span> Awais Mughal </span>
+                        </a>
                     </h1>
                 </li>
                 <li><a href="#projects"> Projects </a></li>
@@ -150,18 +175,21 @@
                         href="https://www.linkedin.com/in/iamawaisakram/"
                         target="_blank"
                     >
-                        LinkedIn
+                        <span class="fa-brands fa-linkedin"></span>
+                        <span class="sr-only"> LinkedIn </span>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/iamawaisakram" target="_blank">
-                        Github
+                        <span class="fa-brands fa-square-github"></span>
+                        <span class="sr-only"> Github </span>
                     </a>
                 </li>
                 <li>
                     <a
                         href="https://drive.google.com/file/d/1TV48-zL0m92CCJuxcv-Fm49xHJfoioPp/view?usp=drive_link"
                         target="_blank"
+                        class="button"
                     >
                         Resume
                     </a>
